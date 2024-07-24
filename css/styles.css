@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    color: #f1c40f;
+    background-color: #222;
+}
+
 .saira-extra-condensed-thin {
     font-family: "Saira Extra Condensed", sans-serif;
     font-weight: 100;
@@ -141,6 +146,11 @@ video{
     text-transform: capitalize;
 }
 
+h1{
+    font-weight: 400;
+    font-style:italic;
+}
+
 .image-container {
     position: relative;
     overflow: hidden;
@@ -207,8 +217,9 @@ video{
 }
 
 .bold{
+    font-weight: 900;
+    color: #222;
     font-style: italic;
-    font-weight: 600;
 }
 
 footer {
