@@ -124,7 +124,6 @@ video{
     width: 100vw;
     height: 91.6vh;
     display: block;
-    /* filter: blur(3px); */
     object-fit: cover;
 }
 
@@ -134,26 +133,24 @@ video{
     text-align: center;
     line-height: 2.5;
     letter-spacing: 8px;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .titleh1{
     position: absolute;
     width: 50vw;
     top: 50%;
-    left: 75%;
+    left: 70%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
     padding: 10px;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7);
-    font-size: 2.5rem;
-    text-transform: capitalize;
 }
 
 h1{
-    font-weight: 400;
-    font-style:italic;
+    font-size: 6rem;
+    font-weight: 900;
 }
 
 .image-container {
@@ -371,11 +368,22 @@ footer::after {
     .image-container img {
         width: 50vw;
     }
+    .titleh1{
+        top: 50%;
+        left: 50%;
+    }
+    h1{
+        font-size: 4rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .content{
-        font-size: 1.5rem;
+    .titleh1{
+        top: 50%;
+        left: 50%;
+        font-size: 3rem;
+        width: 300px;
+        font-weight: 600;
     }
 
     .header-content {
@@ -385,19 +393,19 @@ footer::after {
     }
 
     .header-content h2 {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     .sub{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .containerthree h3{
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 
     .containerthree p{
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .footer-content h4 {
@@ -422,8 +430,14 @@ footer::after {
 }
 
 @media (max-width: 480px) {
-    .header-content h1 {
-        font-size: 1.8em;
+    .titleh1 h1{
+        font-size: 3rem;
+        width: 300px;
+        font-weight: 600;
+    }
+
+    .header-content h2 {
+        font-size: 2.3rem;
     }
 
     .nav-links a {
@@ -448,7 +462,7 @@ footer::after {
     }
 
     .footer-content h4 {
-        font-size: 1.2em;
+        font-size: 2rem;
     }
 
     .footer-content p {
@@ -476,7 +490,7 @@ footer::after {
 
 .subtwo {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .conceptos {
@@ -493,7 +507,7 @@ section {
 }
 
 section h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #333;
     cursor: pointer;
 }
@@ -513,6 +527,7 @@ ul {
 
 .data span {
     display: inline-block;
+    font-size: 1.5rem;
 }
 
 .data button {
@@ -575,7 +590,11 @@ ul {
         font-size: 1.5rem;
     }
 
-    h2 {
+    .concept h2 {
         font-size: 1.25rem;
+    }
+
+    .concept span{
+        font-size: 1rem;
     }
 }
