@@ -27,8 +27,8 @@
         <video autoplay muted loop id="background-video">
             <source src="./assets/img/75775-557015751_small.mp4" type="video/mp4">
         </video>
-        <div class="content">
-            <h1>elije tu mejor estilo de manejo</h1>
+        <div class="titleh1">
+            <h1>Explorando el Mundo sobre Dos Ruedas</h1>
         </div>
         <h2 class="sub">ELIJE TU ESTILO</h2>
         <div class="containertwo">
@@ -89,6 +89,168 @@
                 Ofrece información detallada y útil sobre las distintas técnicas y enfoques utilizados para conducir. Los visitantes podrán aprender sobre la conducción defensiva, la conducción agresiva, la conducción ecoeficiente, entre otros estilos. La página incluirá consejos prácticos, recomendaciones de expertos y posiblemente videos ilustrativos para ayudar a los conductores a comprender mejor cada estilo y mejorar sus habilidades al volante. <span class="bold">Es una fuente valiosa de conocimientos para aquellos interesados en perfeccionar su técnica de manejo y conducir con mayor seguridad y eficiencia.</span>
             </p>
         </div>
+        <div class="tittle">
+            <h3 class="subtwo">Conceptos Básicos del Manejo de una Moto</h3>
+        </div>
+        <div class="conceptos">
+            <section class="concept" id="equipamiento">
+                <h2 onclick="toggleContent('equipamiento-content')">Equipamiento de Seguridad</h2>
+                <div id="equipamiento-content" class="content">
+                    <ul>
+                        <li class="data">
+                            <span>Casco</span>
+                            <button onclick="toggleExplanation('casco-explanation')">Explicación</button>
+                            <p id="casco-explanation" class="explanation">El casco es el elemento más importante de protección. Protege la cabeza en caso de accidente.</p>
+                        </li>
+                        <li class="data">
+                            <span>Ropa Protectora</span>
+                            <button onclick="toggleExplanation('ropa-protectora-explanation')">Explicación</button>
+                            <p id="ropa-protectora-explanation" class="explanation">La ropa protectora incluye chaquetas, guantes y pantalones diseñados para minimizar lesiones.</p>
+                        </li>
+                        <li class="data">
+                            <span>Chaleco Reflectante</span>
+                            <button onclick="toggleExplanation('chaleco-reflectante-explanation')">Explicación</button>
+                            <p id="chaleco-reflectante-explanation" class="explanation">El chaleco reflectante aumenta la visibilidad, especialmente de noche.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="concept" id="controles">
+                <h2 onclick="toggleContent('controles-content')">Controles de la Moto</h2>
+                <div id="controles-content" class="content">
+                    <ul>
+                        <li class="data">
+                            <span>Acelerador</span>
+                            <button onclick="toggleExplanation('acelerador-explanation')">Explicación</button>
+                            <p id="acelerador-explanation" class="explanation">El acelerador controla la velocidad del motor.</p>
+                        </li>
+                        <li class="data">
+                            <span>Embrague</span>
+                            <button onclick="toggleExplanation('embrague-explanation')">Explicación</button>
+                            <p id="embrague-explanation" class="explanation">El embrague se usa para cambiar de marchas.</p>
+                        </li>
+                        <li class="data">
+                            <span>Frenos</span>
+                            <button onclick="toggleExplanation('frenos-explanation')">Explicación</button>
+                            <p id="frenos-explanation" class="explanation">Los frenos permiten reducir la velocidad y detener la moto. Incluyen el freno delantero y trasero.</p>
+                        </li>
+                        <li class="data">
+                            <span>Marchas</span>
+                            <button onclick="toggleExplanation('marchas-explanation')">Explicación</button>
+                            <p id="marchas-explanation" class="explanation">Las marchas permiten ajustar la velocidad y la potencia de la moto.</p>
+                        </li>
+                        <li class="data">
+                            <span>Interruptores</span>
+                            <button onclick="toggleExplanation('interruptores-explanation')">Explicación</button>
+                            <p id="interruptores-explanation" class="explanation">Los interruptores controlan las luces, la bocina y otras funciones adicionales.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="concept" id="tecnicas">
+                <h2 onclick="toggleContent('tecnicas-content')">Técnicas de Conducción</h2>
+                <div id="tecnicas-content" class="content">
+                    <ul>
+                        <li class="data">
+                            <span>Arranque y Parada</span>
+                            <button onclick="toggleExplanation('arranque-explanation')">Explicación</button>
+                            <p id="arranque-explanation" class="explanation">Aprender a arrancar y parar la moto de manera segura es esencial.</p>
+                        </li>
+                        <li class="data">
+                            <span>Equilibrio</span>
+                            <button onclick="toggleExplanation('equilibrio-explanation')">Explicación</button>
+                            <p id="equilibrio-explanation" class="explanation">Mantener el equilibrio, especialmente a bajas velocidades, es crucial para evitar caídas.</p>
+                        </li>
+                        <li class="data">
+                            <span>Curvas</span>
+                            <button onclick="toggleExplanation('curvas-explanation')">Explicación</button>
+                            <p id="curvas-explanation" class="explanation">Inclinar la moto y el cuerpo en las curvas ayuda a mantener la estabilidad.</p>
+                        </li>
+                        <li class="data">
+                            <span>Cambio de Marchas</span>
+                            <button onclick="toggleExplanation('cambio-marchas-explanation')">Explicación</button>
+                            <p id="cambio-marchas-explanation" class="explanation">Cambiar de marchas suavemente es importante para el control de la moto.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="concept" id="mantenimiento">
+                <h2 onclick="toggleContent('mantenimiento-content')">Mantenimiento Básico</h2>
+                <div id="mantenimiento-content" class="content">
+                    <ul>
+                        <li class="data">
+                            <span>Revisión de Neumáticos</span>
+                            <button onclick="toggleExplanation('neumaticos-explanation')">Explicación</button>
+                            <p id="neumaticos-explanation" class="explanation">Verificar la presión y el desgaste de los neumáticos regularmente.</p>
+                        </li>
+                        <li class="data">
+                            <span>Aceite del Motor</span>
+                            <button onclick="toggleExplanation('aceite-explanation')">Explicación</button>
+                            <p id="aceite-explanation" class="explanation">Comprobar el nivel y cambiar el aceite según las recomendaciones del fabricante.</p>
+                        </li>
+                        <li class="data">
+                            <span>Frenos</span>
+                            <button onclick="toggleExplanation('frenos-mantenimiento-explanation')">Explicación</button>
+                            <p id="frenos-mantenimiento-explanation" class="explanation">Inspeccionar y mantener en buen estado las pastillas y discos de freno.</p>
+                        </li>
+                        <li class="data">
+                            <span>Cadena</span>
+                            <button onclick="toggleExplanation('cadena-explanation')">Explicación</button>
+                            <p id="cadena-explanation" class="explanation">Lubricar y ajustar la cadena para asegurar un buen funcionamiento.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="concept" id="normas">
+                <h2 onclick="toggleContent('normas-content')">Normas de Tránsito</h2>
+                <div id="normas-content" class="content">
+                    <ul>
+                        <li class="data">
+                            <span>Señalización</span>
+                            <button onclick="toggleExplanation('senalizacion-explanation')">Explicación</button>
+                            <p id="senalizacion-explanation" class="explanation">Conocer y respetar las señales de tráfico es crucial para la seguridad vial.</p>
+                        </li>
+                        <li class="data">
+                            <span>Velocidad</span>
+                            <button onclick="toggleExplanation('velocidad-explanation')">Explicación</button>
+                            <p id="velocidad-explanation" class="explanation">Mantener la velocidad adecuada y respetar los límites.</p>
+                        </li>
+                        <li class="data">
+                            <span>Distancia de Seguridad</span>
+                            <button onclick="toggleExplanation('distancia-explanation')">Explicación</button>
+                            <p id="distancia-explanation" class="explanation">Mantener una distancia segura con otros vehículos para evitar colisiones.</p>
+                        </li>
+                        <li class="data">
+                            <span>Adelantamientos</span>
+                            <button onclick="toggleExplanation('adelantamientos-explanation')">Explicación</button>
+                            <p id="adelantamientos-explanation" class="explanation">Realizar adelantamientos de manera segura y en zonas permitidas.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="concept" id="conduccion-defensiva">
+                <h2 onclick="toggleContent('conduccion-defensiva-content')">Conducción Defensiva</h2>
+                <div id="conduccion-defensiva-content" class="content">
+                    <ul>
+                        <li class="data">
+                            <span>Anticipación</span>
+                            <button onclick="toggleExplanation('anticipacion-explanation')">Explicación</button>
+                            <p id="anticipacion-explanation" class="explanation">Estar atento a las acciones de otros conductores y posibles peligros.</p>
+                        </li>
+                        <li class="data">
+                            <span>Visibilidad</span>
+                            <button onclick="toggleExplanation('visibilidad-explanation')">Explicación</button>
+                            <p id="visibilidad-explanation" class="explanation">Asegurarse de ser visto y ver claramente el entorno.</p>
+                        </li>
+                        <li class="data">
+                            <span>Posicionamiento</span>
+                            <button onclick="toggleExplanation('posicionamiento-explanation')">Explicación</button>
+                            <p id="posicionamiento-explanation" class="explanation">Colocarse correctamente en el carril para evitar puntos ciegos y mejorar la seguridad.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-content">
@@ -105,6 +267,6 @@
             <p>&copy; 2024 MotoData. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="./js/animaciones.js"></script>
+    <script src="js/animaciones.js"></script>
 </body>
 </html>
