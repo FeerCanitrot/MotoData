@@ -69,19 +69,14 @@ body{
     background-color: #fff;
 }
 
-header {
-    background: #282828;
-    color: #fff;
-    text-align: center;
-}
-
 .header-content {
-    max-width: 1000px;
-    margin: auto;
+    max-width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding: 0 20px;
+    background: #282828;
+    color: #fff;
 }
 
 .header-content a{
@@ -270,19 +265,19 @@ h1{
     width: 100vw;
 }
 
-.containerthree{
+.section{
     width: 80vw;
     margin: 20px auto;
 }
 
-.containerthree h3{
+.section h3{
     font-size: 2rem;
     font-style: italic;
     margin-bottom: 1rem;
     border-bottom: 2px solid black;
 }
 
-.containerthree p{
+.section p{
     font-size: 1.4rem;
     line-height: 2;
     font-weight: 400;
@@ -292,6 +287,110 @@ h1{
     font-weight: 900;
     color: #222;
     font-style: italic;
+}
+
+.tittle {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.subtwo {
+    font-size: 2.5rem;
+}
+
+.conceptos {
+    padding: 2rem;
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.concept h2:hover{
+    background-color: #55555554;
+}
+
+.data {
+    background-color: #eee;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    position: relative;
+}
+
+.data span {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.data button {
+    margin-left: 1rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.data button:hover {
+    background-color: #ddd;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+    padding-left: 1rem;
+}
+
+.content p {
+    margin: 0.5rem 0;
+}
+
+.explanation {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+    margin-top: 0.5rem;
+}
+
+.explanation.visible {
+    max-height: 100px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.content.visible {
+    max-height: 500px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.data:hover {
+    background-color: #ddd;
 }
 
 footer {
@@ -470,117 +569,6 @@ footer::after {
     }
 }
 
-.content2 h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.76);
-    font-size: 7.5rem;
-    font-weight: 900;
-}
-
-.tittle {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-.subtwo {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-.conceptos {
-    padding: 2rem;
-    max-width: 100vw;
-    margin: 0 auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-section h2 {
-    font-size: 2rem;
-    color: #333;
-    cursor: pointer;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-.data {
-    background-color: #eee;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border-radius: 4px;
-    position: relative;
-}
-
-.data span {
-    display: inline-block;
-    font-size: 1.5rem;
-}
-
-.data button {
-    margin-left: 1rem;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.8rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.data button:hover {
-    background-color: #555;
-}
-
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
-    opacity: 0;
-    padding-left: 1rem;
-}
-
-.content p {
-    margin: 0.5rem 0;
-}
-
-.explanation {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
-    opacity: 0;
-    margin-top: 0.5rem;
-}
-
-.explanation.visible {
-    max-height: 100px;
-    opacity: 1;
-    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
-}
-
-.content.visible {
-    max-height: 500px;
-    opacity: 1;
-    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
-}
-
-.data:hover {
-    background-color: #ddd;
-}
-
 @media (max-width: 600px) {
     .conceptos {
         padding: 1rem;
@@ -597,4 +585,17 @@ ul {
     .concept span{
         font-size: 1rem;
     }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~MOTOCROSS~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.content2 h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.76);
+    font-size: 7.5rem;
+    font-weight: 900;
 }
